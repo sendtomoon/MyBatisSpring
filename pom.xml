@@ -16,9 +16,15 @@
 		<druid.version>1.1.10</druid.version>
 		<mybatis.version>3.4.6</mybatis.version>
 		<servlet.version>3.0.1</servlet.version>
+		<commons-lang3.version>3.8</commons-lang3.version>
 	</properties>
 
 	<dependencies>
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-lang3</artifactId>
+			<version>${commons-lang3.version}</version>
+		</dependency>
 		<!-- test begin -->
 		<dependency>
 			<groupId>junit</groupId>
