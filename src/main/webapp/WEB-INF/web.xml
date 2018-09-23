@@ -57,8 +57,7 @@
 		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
 	</listener>
 	<listener>
-		<listener-class>com.sendtomoon.MyBatisSpring.common.SpringWebContextUtil
-		</listener-class>
+		<listener-class>com.sendtomoon.MyBatisSpring.common.SpringWebContextUtil</listener-class>
 	</listener>
 	<filter>
 		<filter-name>encodingFilter</filter-name>
