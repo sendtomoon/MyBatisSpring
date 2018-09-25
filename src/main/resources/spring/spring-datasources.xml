@@ -81,17 +81,7 @@
 			</array>
 		</property> -->
 	</bean>
-	<!-- 分页配置 
-	<bean id="pagePlugin"
-		class="com.jy.common.mybatis.PageInterceptor">
-		<property name="properties">
-			<props>
-				<prop key="databaseType">oracle</prop>
-			</props>
-		</property>
-	</bean>-->
-	<!-- 分页配置end -->
-	<!-- 扫描basePackage下所有以@JYBatis标识的 接口 -->
+	<!-- 扫描basePackage下所有以@CommonBatis标识的 接口 -->
 	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
 		<property name="sqlSessionFactoryBeanName"
 			value="sqlSessionFactory" />
