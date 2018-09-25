@@ -1,6 +1,6 @@
 package com.sendtomoon.MyBatisSpring.common;
 
-public class Error1Exception extends Exception {
+public class Error1Exception extends RuntimeException {
 
 	/**
 	 * 
