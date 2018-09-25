@@ -290,6 +290,18 @@
 		<!-- web end -->
 
 	</dependencies>
+	<distributionManagement>
+		<repository>
+			<id>MainCentos-releases</id>
+			<name>Releases</name>
+			<url>http://127.0.0.1:4949/nexus/content/repositories/releases/</url>
+		</repository>
+		<snapshotRepository>
+			<id>MainCentos-snapshots</id>
+			<name>Snapshots</name>
+			<url>http://127.0.0.1:4949/nexus/content/repositories/snapshots/</url>
+		</snapshotRepository>
+	</distributionManagement>
 
 	<build>
 		<finalName>Spring-Mybatis-Druid</finalName>
@@ -311,6 +323,21 @@
 				<configuration>
 					<encoding>${project.build.sourceEncoding}</encoding>
 				</configuration>
+			</plugin>
+
+			<!--配置生成源码包 -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-source-plugin</artifactId>
+				<version>3.0.1</version>
+				<executions>
+					<execution>
+						<id>attach-sources</id>
+						<goals>
+							<goal>jar</goal>
+						</goals>
+					</execution>
+				</executions>
 			</plugin>
 
 		</plugins>
