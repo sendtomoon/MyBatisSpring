@@ -294,12 +294,12 @@
 		<repository>
 			<id>MainCentos-releases</id>
 			<name>Releases</name>
-			<url>http://127.0.0.1:4949/nexus/content/repositories/releases/</url>
+			<url>http://192.168.0.10:4949/nexus/content/repositories/releases/</url>
 		</repository>
 		<snapshotRepository>
 			<id>MainCentos-snapshots</id>
 			<name>Snapshots</name>
-			<url>http://127.0.0.1:4949/nexus/content/repositories/snapshots/</url>
+			<url>http://192.168.0.10:4949/nexus/content/repositories/snapshots/</url>
 		</snapshotRepository>
 	</distributionManagement>
 
